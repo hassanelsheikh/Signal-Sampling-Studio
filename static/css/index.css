@@ -1,0 +1,278 @@
+* body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #4583ff;
+    
+}
+.row {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    border-radius: 10px;
+  }
+  .center {
+    margin: auto;
+    width: 50%;
+    
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+  #graph1, #graph2{
+    height: 500px;
+    width: 700px;
+    margin-bottom: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+ 
+
+  #graph3{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 500px;
+  }
+
+  .mixer{
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #606060;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .main{
+    margin-left: 300px;
+  }
+
+  #mixSignalbtn{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  #mixSignalbtn:hover{
+    background-color:#dbdbdb
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+
+  #delete{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  #addedcomponents{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  #delete:hover{
+    background-color:#dbdbdb
+  }
+
+  #sig{
+    display: none;
+  }
+
+  #save{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  #save:hover{
+    background-color:#dbdbdb
+  }
+
+  .noise-container{
+    font-size: 18px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .upload{
+    
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+  .file-upload-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border:#000000 solid 1px;
+  }
+
+  .file-upload-button:hover{
+    background-color: #dbdbdb;
+  }
+
+
+
+  .sampling
+  {
+    font-size: 18px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  #deletenoise{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  #deletenoise:hover{
+    background-color: #dbdbdb;
+  }
+
+  .save_sig{
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    .row {
+      width: 100%;
+      flex-direction: column;
+    }
+    .center {
+      width: 80%;
+    }
+    #graph1, #graph2 {
+      height: 300px;
+      width: 400px;
+      flex-direction: column;
+    }
+    #graph3 {
+      width: 150px;
+      height: 300px;
+    }
+    .mixer {
+      width: 200px;
+      font-size: 14px;
+    }
+    .sidenav {
+      width: 200px;
+      padding-top: 10px;
+    }
+    .main {
+      margin-left: 200px;
+    }
+    .noise-container {
+      width: 200px;
+      font-size: 14px;
+    }
+    .upload {
+      width: 200px;
+    }
+    .file-upload-button {
+      width: 100px;
+    }
+    .sampling {
+      width: 200px;
+      font-size: 14px;
+    }
+    #deletenoise {
+      font-size: 14px;
+    }
+    .save_sig {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .row {
+      width: 100%;
+    }
+    .center {
+      width: 80%;
+    }
+    #graph1, #graph2 {
+      height: 400px;
+      width: 500px;
+    }
+    #graph3 {
+      width: 200px;
+      height: 400px;
+    }
+    .mixer {
+      width: 250px;
+      font-size: 16px;
+    }
+    .sidenav {
+      width: 250px;
+    }
+    .noise-container {
+      width: 250px;
+      font-size: 16px;
+    }
+    .upload {
+      width: 250px;
+    }
+    .file-upload-button {
+      width: 120px;
+    }
+    .sampling {
+      width: 250px;
+      font-size: 16px;
+    }
+    #deletenoise {
+      font-size: 16px;
+    }
+  }

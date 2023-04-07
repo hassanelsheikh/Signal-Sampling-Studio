@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sampling studio </title>
+    
+</head>
+<body>
+   
+
+    <div class="sidenav">
+
+        
+
+        <div class="mixer"> <h3>Signal Mixer</h3>
+            <label for="maxfreq" id="frel">Frequency of mixed signal</label>
+           <input type="range" min="1" max="15" value="5" class="slider" id="maxfreq">
+           F: <span id="freqOutput"></span><br><br>
+           <label for="Amplitude" id="frel">Max Amplitude of mixed signal</label>
+           <input type="range" min="0.5" max="15" step="0.5" value="5" class="slider" id="Amplitude">
+           Amp: <span id="ampOutput"></span><br><br>
+           <button type="button" name="button" id="mixSignalbtn" >Add Signal</button>
+           <div>
+            <br>
+            <select id="addedcomponents"></select>
+            <button type="button" id="delete">Remove</button>
+        </div><br>
+           
+        </div>
+            <hr>
+
+
+        <div class="noise-container">
+            <div class="noise">
+                <h3>Add Noise</h3>
+                <label for="noise" id="noiselabel">SNR:</label>
+               <input type="range" min="1" max="30" value="5" class="slider" id="noise">
+               <span id="snrOutput"></span><br><br>
+               <button type="button" id="deletenoise">Remove noise</button>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+        <div class="sampling">
+            <h3>Sampling</h3>
+            <input type="range" min="0" max="60" value="1" class="slider" id="sampling"><br>
+            Sampling at rate : <span id="SROutput"></span>
+           </div><br><hr>
+
+           <div class="upload">
+            <label for="sig" class="file-upload-button">Browse Signal</label>
+            <input type="file"
+                   id="sig" name="signal"
+                   accept=".xlsx, .xls, .csv" oninput="importSignal()">
+        </div><br>
+
+            <div class="save_sig">
+                <a id="download"><button type="button" id="save">Save Signal</button></a>
+            </div>
+           
+
+
+    </div>
+
+
+    <div class="main">
+
+        <h1>Sampling Studio</h1>
+                
+
+<div class="container">
+    <div class="row">
+        <div class="column" id="graph1">
+        </div>
+        <div class="column" id="graph2">
+        </div>
+    </div>
+</div>
+
+<span id="fft-max-magnitude"></span>
+
+
+
+
+
+<div class="center" id="graph3" ></div>
+
+</div>
+    <script src="../static/js/logic.js"></script>
+
+</body>
+</html>
